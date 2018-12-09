@@ -1,0 +1,147 @@
+.grid {
+  display: grid;
+  grid-template-columns: 40px auto;
+  grid-template-rows: 45px auto;
+  white-space: nowrap;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.item1 {
+  grid-row-start: 2;
+  grid-row-end: auto;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+.item2 {
+  grid-column-start: 2;
+  grid-column-end: auto;
+}
+.item3 {
+  grid-row-start: 2;
+  grid-row-end: auto;
+  grid-column-start: 2;
+  grid-column-end: auto;
+}
+.row-add {
+  border: 0;
+  background-color: transparent;
+}
+.row-sub {
+  background-color: transparent;
+  display: block;
+  border: 0;
+  margin-top: 15px;
+}
+.col-sub {
+  background-color: transparent;
+  border: 0;
+  margin-right: 30px;
+}
+.col-add {
+  background-color: transparent;
+  border: 0;
+}
+
+.col-add:focus {
+  outline: 0;
+}
+.col-sub:focus {
+  outline: 0;
+}
+.row-add:focus {
+  outline: 0;
+}
+.row-sub:focus {
+  outline: 0;
+}
+
+.A,
+.B {
+  background: white;
+  border-color: rgb(200, 200, 200) rgb(200, 200, 200) rgb(200, 200, 200) black;
+  color: rgb(0, 0, 0);
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  border-width: 0.5px 1px;
+  border-style: solid;
+  border-color: aqua;
+  text-align: center;
+  background-color: transparent;
+  color: white;
+  margin: 0px;
+}
+.A:focus,
+.B:focus {
+  background-color: azure;
+  color: black;
+}
+.AB {
+  background: white;
+  border-color: rgb(200, 200, 200) rgb(200, 200, 200) rgb(200, 200, 200) black;
+  color: rgb(0, 0, 0);
+  width: 55px;
+  height: 55px;
+  font-size: 20px;
+  border-width: 0.5px 0.5px 1px 1px;
+  border-style: solid;
+  text-align: center;
+}
+.AB:focus {
+  background-color: azure;
+}
+
+.buttons {
+  margin-top: 50px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+.btn {
+  margin: 5px;
+}
+@media (max-width: 624px) {
+  .buttons {
+    text-align: center;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: nowrap;
+  }
+  .row1 {
+    flex: 1;
+  }
+  .row2 {
+    flex: 1;
+  }
+  .grid {
+    overflow: scroll;
+  }
+}
+
+.App {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(./img/light.png);
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat-y;
+}
+
+.outputcard {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+  margin-bottom: 100px;
+}
+.scalar {
+  background-color: transparent;
+  border: 0px;
+  text-align: center;
+  color: white;
+}
