@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import Buttons from "./Buttons";
-import Input from "./Input";
+import Buttons from "../elements/Buttons";
+import MatrixComponent from "../elements/Matrix";
 
-class MatriceInput extends Component {
+class MainContent extends Component {
   state = {
     matrixA: {
       rowA: 3,
@@ -139,7 +139,7 @@ class MatriceInput extends Component {
       <div>
         <div className="d-flex flex-row  justify-content-around m-0 flex-wrap p-2">
           <div className="col d-flex flex-nowrap justify-content-center p-2 ">
-            <Input
+            <MatrixComponent
               onChange={this.onChangeHandle}
               onClick={this.onClickHandle}
               className="A"
@@ -148,7 +148,7 @@ class MatriceInput extends Component {
             />
           </div>
           <div className="col d-flex flex-nowrap justify-content-center p-2 ">
-            <Input
+            <MatrixComponent
               onChange={this.onChangeHandle}
               onClick={this.onClickHandle}
               className="B"
@@ -167,4 +167,4 @@ class MatriceInput extends Component {
     );
   }
 }
-export default MatriceInput;
+export default MainContent;

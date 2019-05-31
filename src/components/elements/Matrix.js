@@ -1,6 +1,6 @@
 import React from "react";
-import plus from "../img/plus.png";
-import minus from "../img/minus.png";
+import plus from "../../img/plus.png";
+import minus from "../../img/minus.png";
 
 const Input = ({ className, values, col, onChange, onClick }) => {
   const onClickHandle = e => {
