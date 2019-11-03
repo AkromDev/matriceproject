@@ -1,3 +1,7 @@
+## PS
+This was my first ReactJS project I did for University class Project. 
+Thus code quality is not that great but this was a good step to start web development journey.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
